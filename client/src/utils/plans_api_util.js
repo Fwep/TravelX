@@ -1,5 +1,5 @@
 export const fetchPlans = () => {
-  return %.ajax({
+  return $.ajax({
     method: ''
   })
 }

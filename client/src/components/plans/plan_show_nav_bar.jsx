@@ -53,6 +53,7 @@ class PlanShowNavBar extends React.Component {
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSaveClick = this.handleSaveClick.bind(this);
+    this.handleNewPlan = this.handleNewPlan.bind(this);
   };
 
   handleChange(event, value) {
@@ -68,6 +69,11 @@ class PlanShowNavBar extends React.Component {
       console.log(this.state)
     }
   };
+
+  handleNewPlan() {
+    // Will need to store city name before commenting this out
+    // this.props.fetchPlan(city)
+  }
 
   render() {
     const { classes } = this.props;
@@ -93,6 +99,7 @@ class PlanShowNavBar extends React.Component {
                 Save
               </Button>
               <Button
+                onClick={this.handleNewPlan}
                 color="secondary"
                 variant="contained"
                 className={classes.button}

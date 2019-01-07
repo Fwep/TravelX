@@ -5,12 +5,17 @@ import ThemeProvider from "../ThemeProvider";
 import LandingPageHero from "./LandingPageHero";
 import LandingPageFeatures from "./LandingPageFeatures";
 import LandingPageAbout from "./LandingPageAbout";
+import NavBar from "../plans/navbar";
 
 class LandingPage extends Component {
+  componentDidMount() {
+    document.title = "TravelX"
+  }
+  
   render() {
     return (
       <div>
-        <div>Nav Bar</div>
+        <NavBar/>
         <LandingPageHero />
         <LandingPageFeatures />
         <LandingPageAbout />
