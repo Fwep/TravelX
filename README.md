@@ -1,11 +1,6 @@
 # TravelX
 
-_TravelX_ helps travelers create travel plans and discover popular attractions.
-
-![landing page](https://github.com/Fwep/TravelX/blob/master/docs/readme/landing-page.png?raw=true)
-![schedule]:(https://github.com/Fwep/TravelX/blob/master/docs/readme/schedule.png?raw=true)
-
-![map](https://github.com/Fwep/TravelX/blob/master/docs/readme/map.png?raw=true)
+[TravelX](http://travelx-aa.herokuapp.com) is an attraction planning app that helps travelers create travel plans and discover popular attractions.
 
 Key features:
 
@@ -14,11 +9,9 @@ Key features:
 - View attractions in both schedule and map view
 - Beautiful and intuitive user experience
 
-This project was created in 7 days by a team of software developers at App Academy, the nation's #1 coding bootcamp with a 3% acceptance rate.
+This project was created in 7 days by a team of software developers at App Academy, the nation's #1 immersive software development course with a 3% acceptance rate.
 
-Our goal was to create a useful and beautiful travel planning app that anyone could use to make travel planning easier. As a team, we were also interested in learning Material UI, the most popular React library, and the Google Places API.
-
-[Visit the live site](http://travelx-aa.herokuapp.com)
+![landing page](https://github.com/Fwep/TravelX/blob/master/docs/readme/landing-page.png?raw=true)
 
 ## Technologies
 
@@ -30,8 +23,8 @@ Our goal was to create a useful and beautiful travel planning app that anyone co
 
 ### Backend APIs
 
-- Google Places (fetches place data)
-- Unsplash (fetches images of destination)
+- Google Places (for attraction information)
+- Unsplash (for destination photos)
 
 ### Frontend:
 
@@ -40,27 +33,43 @@ Our goal was to create a useful and beautiful travel planning app that anyone co
 - Axios (JS AJAX library)
 - Material-UI (React components library that implements Google's Material Design UI philosophy)
 
-## Technical Showcase
+## Image Gallery
 
-Steven Inouye
+![sanfran]:(https://github.com/Fwep/TravelX/blob/master/docs/readme/sanfran.png?raw=true)
 
-- Work with MongoDB\*\*
-- Google Places\*\*
-- Interaction between FE and BE
-- Routes
-- Permalinks\*\*
-- Edge Cases
-- UX
-- Material UI
-- Custom React Maps Component\*\*
-- Themeing+
-- Scoping
-- Git Workflow
--
+![schedule]:(https://github.com/Fwep/TravelX/blob/master/docs/readme/schedule.png?raw=true)
 
-Each person choose one thing and add here
+![map](https://github.com/Fwep/TravelX/blob/master/docs/readme/map.png?raw=true)
 
-## Screenshots of code, and snippets
+![tiling]:(https://github.com/Fwep/TravelX/blob/master/docs/readme/tiling.png?raw=true)
+
+![login]:(https://github.com/Fwep/TravelX/blob/master/docs/readme/login.png?raw=true)
+
+## Key Features
+
+### Dynamic Plan Saving and Regeneration
+
+In order to allow the user to save their current itinerary or generate a new one if the current one was unsatisfactory a dynamic method of handling different actions was necessary. This feature, implemented in only a few lines of code, ties in many other key features of the app, including user authentication for saving new plans, viewing of all existing plans, and fetching a new itinerary to dynamically populate the URL path.
+
+```js
+  handleSaveClick() {
+    const { session, saveItinerary, openModal, planId, history } = this.props;
+
+    if (session) {
+      saveItinerary(planId).then(history.push("/plans"));
+    } else {
+      openModal("login");
+    }
+  }
+
+  handleNewPlan() {
+    const { getRandCityItinerary, city } = this.props;
+
+    getRandCityItinerary(city.name).then(res =>
+      this.props.history.push(`/plans/${res.itinerary._id}`)
+    );
+  }
+```
 
 ## Future Features
 
@@ -68,23 +77,12 @@ Each person choose one thing and add here
 - Browse accomodations from AirBnb API
 - Browse flights to and from destination via a flights API
 - Generate an estimated cost of trip including accomodation and flights
-- Customize your generated plan based on attraction tags
+- Customize the generated plan based on attraction tags
 
-## Readme todo
-
-What needs to be done (delete when finished):
-
-- Description of project, including goals
-- Link to live demo and/or instructions on how to use and run code
-- List of techs/languages/plugins/APIs used
-- Technical implementation details for anything worth mentioning (basically anything you had to stop and think about before building)
-- Include links to the neatest parts of the code, or embed snippets
-- Include screenshots of anything that looks pretty
-- To-dos and future features
 
 ## Team Members
 
 [Josh Stroud](link)
 [Steven Inouye]()
-[Micah Jaffe]()
+[Micah Jaffe](https://github.com/micah-jaffe)
 [Taran Cacacho]()
