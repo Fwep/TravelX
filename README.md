@@ -35,15 +35,15 @@ This project was created in 7 days by a team of software developers at App Acade
 
 ## Image Gallery
 
-![sanfran]:(https://github.com/Fwep/TravelX/blob/master/docs/readme/sanfran.png)
+![sanfran](https://github.com/Fwep/TravelX/blob/master/docs/readme/sanfran.png)
 
-![schedule]:(https://github.com/Fwep/TravelX/blob/master/docs/readme/schedule.png)
+![schedule](https://github.com/Fwep/TravelX/blob/master/docs/readme/schedule.png)
 
 ![map](https://github.com/Fwep/TravelX/blob/master/docs/readme/map.png)
 
-![tiling]:(https://github.com/Fwep/TravelX/blob/master/docs/readme/tiling.png)
+![tiling](https://github.com/Fwep/TravelX/blob/master/docs/readme/tiling.png)
 
-![login]:(https://github.com/Fwep/TravelX/blob/master/docs/readme/login.png)
+![login](https://github.com/Fwep/TravelX/blob/master/docs/readme/login.png)
 
 ## Key Features
 
