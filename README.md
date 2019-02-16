@@ -9,8 +9,6 @@ Key features:
 - View attractions in both schedule and map view
 - Beautiful and intuitive user experience
 
-This project was created in 7 days by a team of software developers at App Academy, the nation's #1 immersive software development course with a 3% acceptance rate.
-
 ![landing page](https://github.com/Fwep/TravelX/blob/master/docs/readme/landing-page.png?raw=true)
 
 ## Technologies
