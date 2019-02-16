@@ -1,6 +1,6 @@
 # TravelX
 
-[TravelX](http://travelx-aa.herokuapp.com) is an attraction planning app that helps travelers create travel plans and discover popular attractions.
+[TravelX](http://travelx-app.herokuapp.com) is an attraction planning app that helps travelers create travel plans and discover popular attractions.
 
 Key features:
 
