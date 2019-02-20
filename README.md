@@ -1,15 +1,8 @@
 # TravelX
+![landing page](https://github.com/Fwep/TravelX/blob/master/docs/readme/landing-page.png?raw=true)
 
 [TravelX](http://travelx-app.herokuapp.com) is an attraction planning app that helps travelers create travel plans and discover popular attractions.
-
-Key features:
-
-- Generate a travel plan based on a destination city
-- See a schedule of popular attractions for destination city
-- View attractions in both schedule and map view
-- Beautiful and intuitive user experience
-
-![landing page](https://github.com/Fwep/TravelX/blob/master/docs/readme/landing-page.png?raw=true)
+## Demo
 
 ## Technologies
 
@@ -31,19 +24,11 @@ Key features:
 - Axios (JS AJAX library)
 - Material-UI (React components library that implements Google's Material Design UI philosophy)
 
-## Image Gallery
-
-![sanfran](https://github.com/Fwep/TravelX/blob/master/docs/readme/sanfran.png)
-
-![schedule](https://github.com/Fwep/TravelX/blob/master/docs/readme/schedule.png)
-
-![map](https://github.com/Fwep/TravelX/blob/master/docs/readme/map.png)
-
-![tiling](https://github.com/Fwep/TravelX/blob/master/docs/readme/tiling.png)
-
-![login](https://github.com/Fwep/TravelX/blob/master/docs/readme/login.png)
-
 ## Key Features
+- Generate a travel plan based on a destination city
+- See a schedule of popular attractions for destination city
+- View attractions in both schedule and map view
+- Beautiful and intuitive user experience
 
 ### Dynamic Plan Saving and Regeneration
 
@@ -72,15 +57,14 @@ In order to allow the user to save their current itinerary or generate a new one
 ## Future Features
 
 - Add, edit, and remove attractions from a generated plan
-- Browse accomodations from AirBnb API
+- Browse accomodations from Airbnb API
 - Browse flights to and from destination via a flights API
 - Generate an estimated cost of trip including accomodation and flights
 - Customize the generated plan based on attraction tags
 
-
 ## Team Members
 
-[Josh Stroud](link)
-[Steven Inouye]()
-[Micah Jaffe](https://github.com/micah-jaffe)
-[Taran Cacacho]()
+- [Steven Inouye]()
+- [Micah Jaffe](https://github.com/micah-jaffe)
+- [Taran Cacacho](https://linkedin.com/in/tarancacacho)
+- [Josh Stroud]()
