@@ -3,7 +3,7 @@
 
 [TravelX](http://travelx-app.herokuapp.com) is an attraction planning app that helps travelers create travel plans and discover popular attractions.
 ## Demo
-
+![Demo](docs/readme/demo.gif)
 ## Technologies
 
 ### Backend
